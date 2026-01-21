@@ -1,0 +1,64 @@
+*
+.hero{
+    padding-top: 120px;
+}
+/* common styling */
+.hero,
+.about .first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* common styling */
+.hero .content,
+.hero img {
+    width: 48%;
+}
+
+.hero .content {
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    padding: 25px;
+}
+
+.hero .content h1 {
+    color: var(--text);
+    font-size: 50px;
+}
+
+.hero .content #h1-2 {
+    color: var(--base);
+
+}
+
+.hero .content p {
+    padding-top: 28px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text);
+
+}
+
+button {
+   width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid var(--base);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn1 {
+    background-color: transparent;
+    color: var(--base);
+}
+
+
+.hero img {
+    filter: drop-shadow(5px 11px 29px #4b4848);
+    animation: bounce 5s infinite;
+}
