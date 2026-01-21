@@ -1,116 +1,312 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
-    
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
-   <!--Font Awwesome CDN -->
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-
+    <!-- Custom Css CDN-->
+    <link rel="stylesheet" href="./style.css">
 </head>
-
-<!-- Navigation Bar -->
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
-  <div class="container-fluid">
-
-    <div class="logo">
-      <a class="navbar-brand" href="#"><img class="fluid" src="Logo(1).png" alt="Logo" width="40" height="40"></a>
-    </div>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="nav justify-content-end">
-
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">About</a>
-  </li>
-  
-  <li class="nav-item">
-    <a class="nav-link" href="#">Blog</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-</li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="#">Register</a>
-    <input class="btn btn-primary" type="submit" value="Submit">
-  </li> 
-</ul>
-    </div>
-  </div>
-
-<!-- End of Navigation Bar -->
-
-<!-- Body Section Start -->
-
-
-    <div class="col-md-8 containe fluid">
-      <div class="card-body">
-        <h1 class="card-title">HOW AI WILL</h1>
-        <h2 class="card-text">CHANGE THE FUTURE</h2>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-      <div class="card mb-3" style="max-width: 400px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="placeholder.png" mx=400 class="img-fluid rounded-start" alt="...">
-    </div>
-    </div>
-  </div>
-</div>
-
-
-    <!-- hero section start -->
-  
-    <div class="card mb-3">
-  <img src="container.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-  </div>
-</div>
-
-   
-    <!-- hero section end -->
-
-    <!-- About Section Start -->
-
 
 <body>
 
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="#">
+         <img src="./images/logo (1).png" alt=" Logo" width="35" class="me-2"> 
+
+                <img src="./images/Zarrin.png" alt="Zarrin Logo" width="35" class="me-2"> 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-medium" href="#">About</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-purple px-4 py-2 rounded-2 fw-medium shadow-sm">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header SEction End-->
+
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75 py-5">
+                <div class="col-lg-6 text-white">
+                    <p class="text-uppercase small mb-3 ls-2 opacity-75">Featured Post</p>
+                    <h1 class="display-3 fw-bold mb-4">How AI will Change the Future</h1>
+                    <p class="opacity-75 mb-4 pe-lg-5">The future of AI will see home robots having enhanced intelligence, increased capabilities, and becoming more personal and possibly cute. For example, home robots will overcome navigation, direction.</p>
+                    <a href="#" class="btn btn-light text-primary fw-bold px-4 py-2">Read more</a>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <img src="./images/Container.png" class="img-fluid hero-img rounded-4" alt="AI Face">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
+    <!-- Hero Section End -->
+
+    <!-- Feature Section Start-->
+    <section class="feature-section">
+        <div class="container">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="feature-img-container">
+                            <img src="./images/vg-game.png" class="img-fluid w-100 object-fit-cover" alt="VR Experience" style="min-height: 450px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 bg-white">
+                        <div class="card-body p-4 p-xl-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="text-primary fw-bold small tracking-widest">DEVELOPMENT</span>
+                                <span class="text-muted small ms-3">16 March 2023</span>
+                            </div>
+                            <h2 class="fw-bold mb-3 h3 lh-base">How to make a Game look more attractive with New VR & AI Technology</h2>
+                            <p class="text-muted small mb-4 opacity-75">
+                                Google has been investing in AI for many years and bringing its benefits to individuals, businesses and communities. Whether it's publishing state-of-the-art research...
+                            </p>
+                            <a href="#" class="btn btn-outline-purple px-4 py-2 rounded-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Feature Section Start-->
+
+    <!-- Recent Post Section Start -->
+    <section class="recent-posts-area bg-white py-5">
+        <div class="container mt-5">
+        
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="fw-bold fs-2 m-0">Our Recent Post</h2>
+                <button class="btn btn-purple px-4 py-2">View All</button>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm bg-light-gray">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-7">
+                                <img src="./images/vg-game.png" class="img-fluid w-100 h-100 object-fit-cover" alt="VR Player" style="min-height: 450px;">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="card-body p-4 p-xl-5">
+                                    <p class="text-primary fw-bold small mb-2">DEVELOPMENT <span class="text-muted fw-normal ms-2">16 March 2023</span></p>
+                                    <h2 class="card-title fw-bold mb-3 h3 lh-base">How to make a Game look more attractive with New VR & AI Technology</h2>
+                                    <p class="card-text text-muted mb-4 pe-lg-3">Google has been investing in AI for many years and bringing its benefits to individuals, businesses and communities. Whether it's publishing state-of-the-art research...</p>
+                                    <a href="#" class="btn btn-outline-purple px-4 py-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="card border-0 h-100">
+                        <img src="./images/travel-1.png" class="img-fluid rounded-4 mb-3" alt="Travel">
+                        <p class="text-muted small mb-1">Travel <span class="ms-2">13 March 2023</span></p>
+                        <h5 class="fw-bold">8 Rules of Travelling In Sea You Need To Know</h5>
+                        <p>Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>  
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 h-100">
+                        <img src="./images/office-1.png" class="img-fluid rounded-4 mb-3" alt="Job">
+                        <p class="text-muted small mb-1">Development <span class="ms-2">10 March 2023</span></p>
+                        <h5 class="fw-bold">How to build strong portfolio and get a Job in UI/UX</h5>
+                        <p>Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 h-100">
+                        <img src="./images/sports-1.png" class="img-fluid rounded-4 mb-3" alt="Football">
+                        <p class="text-muted small mb-1">Sports <span class="ms-2">11 March 2023</span></p>
+                        <h5 class="fw-bold">How to Be a Professional Footballer in 2023</h5>
+                        <p>Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Recent Post Section End -->
+
+    <!-- Popular Post Section Start -->
+    <section class="popular-posts py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="fw-bold fs-2">Popular Post</h2>
+                <button class="btn btn-purple px-4 py-2">View All</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/travel-2.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Train">
+                        <p class="text-muted small mb-1">Travel <span class="ms-2">08 March 2023</span></p>
+                        <h5 class="fw-bold h6">Train Or Bus Journey? Which one suits?</h5>
+                        <p class="text-muted small opacity-75">The choice between a train or bus journey depends on various factors such as the distance, the cost, and person...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/office-2.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Laptop">
+                        <p class="text-primary fw-bold small mb-1">Development <span class="text-muted fw-normal ms-2">11 March 2023</span></p>
+                        <h5 class="fw-bold h6">Best Website to research for your next project</h5>
+                        <p class="text-muted small opacity-75">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/sports-2.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Dancer">
+                        <p class="text-muted small mb-1">Sports <span class="ms-2">10 March 2023</span></p>
+                        <h5 class="fw-bold h6">How to Be a Dancer in 2023 with proper skills?</h5>
+                        <p class="text-muted small opacity-75">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/travel-3.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Singer">
+                        <p class="text-muted small mb-1">Trend <span class="ms-2">10 March 2023</span></p>
+                        <h5 class="fw-bold h6">Who is the best singer on chart? Know him?</h5>
+                        <p class="text-muted small opacity-75">chart by Billboard which ranks the all-time greatest artists based on their performance on the weekly Billboard Hot 100 and...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/office-3.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Business">
+                        <p class="text-primary fw-bold small mb-1">Development <span class="text-muted fw-normal ms-2">11 March 2023</span></p>
+                        <h5 class="fw-bold h6">How to start export import business from home?</h5>
+                        <p class="text-muted small opacity-75">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="post-card border-0">
+                        <img src="./images/sports-3.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Drink">
+                        <p class="text-muted small mb-1">Trend <span class="ms-2">10 March 2023</span></p>
+                        <h5 class="fw-bold h6">Make some drinks with chocolates chocolates and milk</h5>
+                        <p class="text-muted small opacity-75">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment survival strategies to ensure proactive...</p>
+                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Popular Post Section End -->
+
+    <!-- Newsletter Section Start -->
+    <section class="newsletter-wrap">
+        <div class="container text-center text-white py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-9">
+                    <h2 class="display-5 fw-bold mb-4 newsletter-title">
+                        Get our stories delivered From <br class="d-none d-md-block"> us to your inbox weekly.
+                    </h2>
+                
+                    <div class="subscription-form mx-auto mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-get-started" type="button">Get started</button>
+                        </div>
+                    </div>
+                
+                    <p class="small opacity-75 mt-4 newsletter-note">
+                        Get a response tomorrow if you submit by 9pm today. If we received after <br class="d-none d-md-block"> 9pm will get a response the following day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section End -->
 
 
+       <!-- Footer Section Start -->
+
+    <footer class="main-footer">
+        <div class="container text-center py-5">
+            <div class="footer-brand mb-4">
+                <a href="#" class="text-decoration-none d-flex align-items-center justify-content-center">
+                    <img src="./images/logo (1).png" alt="Zarrin" width="30" class="me-2">
+                    <span class="fw-bold fs-3 text-dark">Zarrin</span>
+                </a>
+            </div>
+
+            <div class="footer-links d-flex justify-content-center gap-4 mb-4">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="social-links d-flex justify-content-center gap-3 mb-5">
+                <img src="./images/Dribbble.png" alt=""><a href="#" class="social-item">FB</a>
+                <img src="./images/Behance.png" alt=""><a href="#" class="social-item">IG</a>
+                <img src="./images/Instagram.png" alt=""><a href="#" class="social-item">LN</a>
+                <img src="./images/Twitter.png" alt=""><a href="#" class="social-item">YT</a>
+            </div>
+
+            <div class="copyright-border"></div>
+            <p class="copyright-text">Copyright Ideapeel Inc © 2023. All Right Reserved</p>
+        </div>
+    </footer>
+
+    
+       <!-- Footer Section End -->
 
 
-
-
-
-
-
-
-
-
-
-    <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="script.js"></script>
+    <!-- Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    
 </body>
 </html>
